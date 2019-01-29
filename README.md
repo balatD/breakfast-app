@@ -25,3 +25,4 @@ Breakfast app made to make organizing breakfast easier!
    npm build
    ```
 
+Work in progress!
