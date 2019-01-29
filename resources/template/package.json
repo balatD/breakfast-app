@@ -14,7 +14,8 @@
     "deploy": "gulp deploy",
     "clean": "rm -r ./dist",
     "test": "xo gulpfile.js",
-    "hbs": "gulp handlebars"
+    "hbs": "gulp handlebars",
+    "copy-all": "gulp copy-all"
   },
   "repository": {
     "type": "git",
