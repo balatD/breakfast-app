@@ -1,7 +1,7 @@
 # Breakfast App :bread:
 Breakfast app made to make organizing breakfast easier!
 
-## Instalation 
+## Installation 
    
    To install the dependencies used by the app and to run a node.js server locally for testing.
    
