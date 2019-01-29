@@ -29,6 +29,10 @@ const baseDirs = {
 	assets: 'dist/assets/'
 };
 
+const targetDir = {
+	assets: '../../../breakfast-app/src/'
+};
+
 /* routes: object that contains the paths */
 
 const routes = {
@@ -276,10 +280,13 @@ gulp.task('icons', function() {
         .pipe(gulp.dest(baseDirs.dist+'/assets/fonts/'));
 });
 
+gulp.task('copy-all', () => {
+    gulp.src([baseDirs.assets]).pipe(gulp.dest(targetDir.assets));
+});
 
 gulp.task('dev', ['handlebars', 'styles', 'scripts', 'images', 'serve']);
 
-gulp.task('build', ['handlebars', 'styles', 'scripts', 'images']);
+gulp.task('build', ['handlebars', 'styles', 'scripts', 'images', 'copy-all']);
 
 gulp.task('optimize', ['uncss', 'critical', 'images']);
 
